@@ -13,13 +13,15 @@ app.use(bodyparser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 app.set("view engine", "ejs");
 
-mongoose.connect("mongodb://localhost/schooldb", {useNewUrlParser: true}); //mongodb connect
+mongoose.connect("mongodb://localhost/schooldb", { useNewUrlParser: true }); //mongodb connect
 
-const schoolSchema = new mongoose.Schema({
-    username: String,
-    studentId: String,
-    password: String,
+const studentSchema = new mongoose.Schema({
+  username: String,
+  studentId: String,
+  password: String,
 });
+
+const studentModel = new mongoose.model("student", studentSchema);
 
 app.route("/").get(function (request, response) {
   response.render("home");
@@ -57,7 +59,7 @@ app
     response.render("request-transcript");
   })
   .post(function (request, response) {
-    const student_data = request.body.student-data;
+    const student_data = request.body.student - data;
     const email = request.body.email;
   });
 
