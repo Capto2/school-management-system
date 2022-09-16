@@ -1,0 +1,12 @@
+<%- include("partials/header"); -%>
+<div class="main">
+    <h1>request transcript now</h1>
+    <div class="form">
+        <form action="/" method="post">
+            <label for="student-data" class="label">student id, registration number or matriculation number</label><input type="text" name="student-data" class="form-control" id="student-data"  placeholder="psc1607980" />
+            <label for="password" class="label">email</label><input type="email" name="email" class="form-control" id="password" placeholder="ent@rtp.als" />
+            <button type="submit" class="btn btn-sm bg-secondary">send</button>
+        </form>
+    </div>
+</div>
+<%- include("partials/footer"); -%>

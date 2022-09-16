@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins' sans-serif;
+    overflow: visible;
+}
+body{
+    width: 100%;
+}
+div.main{
+    margin-top: 4.2rem;
+    width: 96%;
+}
+div a.card-link{
+    text-align: right;
+    padding-right: 1.122rem;
+}
+div.footer{
+    margin-top: 1.5566rem;
+    width: 100%;
+    text-align: right;
+    background-color: #f5eded;
+    margin-right: 3.23rem;
+}
+span.footer-start{
+    display: inline-block;
+    text-align: right;
+}
+div.main h1{
+    text-transform: capitalize;
+    font-size: 1.45rem;
+    font-weight: 400;
+}
+label.label{
+    margin-top: 1rem;
+    margin-bottom: calc(1.3rem -14px);
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+input::placeholder{
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+}
+div.form form input{
+    text-align: center;
+    display: inline-block;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+div.form form button.btn{
+    width: 25%;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 1rem;
+    color: #f5eded;
+}
+div.form textarea::placeholder{
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 1.67rem;
+    font-weight: 700;
+    height: -20px;
+}
