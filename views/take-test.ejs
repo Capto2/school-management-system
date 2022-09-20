@@ -1,0 +1,33 @@
+<%- include("partials/header"); -%>
+<main class="questions" style="margin: 23%;">
+    <fieldset>
+        <legend>Take a Test</legend>
+        <form action="/application/take-a-test" method="post" class="form">
+        <div class="question-card">
+            <p class="question">
+                What is the name of the first man to reach the sun
+            </p>
+            <div class="answer-card">
+                <input type="radio" name="answer_one" id="answer_one" value="0" class="" />
+                <label for="answer">Richard Vicktown</label>
+            </div>
+            <div class="answer-card">
+                <input type="radio" name="answer_two" id="answer_two" value="0" class="" />
+                <label for="answer">Nicholas Igbunu</label>
+            </div>
+            <div class="answer-card">
+                <input type="radio" name="answer_three" id="answer_three value="1" class="" />
+                <label for="answer">Jemifor Augustine</label>
+            </div>
+            <div class="answer-card">
+                <input type="radio" name="answer_four" id="answer_four" value="0" class="" />
+                <label for="answer">None</label>
+            </div>
+            <button type="submit">Next Question
+                <span class="material-symbols-sharp">navigate_next</span>
+            </button>
+        </div>
+        </form>
+    </fieldset>
+</main>
+<%- include("partials/footer"); -%>

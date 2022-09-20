@@ -1,0 +1,323 @@
+/* google font @import for font family('Poppins') */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;0,900;1,100;1,200;1,500;1,600;1,800;1,900&display=swap");
+
+/* Variable Root */
+:root {
+  --color-primary: #7380ec;
+  --color-danger: #ff7782;
+  --color-success: #41f1b6;
+  --color-warning: #ffbb55;
+  --color-white: #fff;
+  --color-info-dark: #7d8da1;
+  --color-info-light: #dce1eb;
+  --color-dark: #363949;
+  --color-light: rgba(132, 139, 200, 0.18);
+  --color-primary-variant: #111e88;
+  --color-dark-variant: #677483;
+  --color-background: #f6f6f9;
+
+  --card-border-radius: 2rem;
+  --border-radius-1: 0.4rem;
+  --border-radius-2: 0.8rem;
+  --border-radius-3: 1.2rem;
+
+  --card-padding: 1.8rem;
+  --padding-1: 1.2rem;
+
+  --box-shadow: 0 2rem 3rem var(--color-light);
+}
+/* Dark theme variable */
+.dark-theme-variables {
+  --color-background: #181a1e;
+  --color-white: #202528;
+  --color-dark-variant: #a3bdcc;
+  --color-light: rgba(0, 0, 0, 0.4);
+  --box-shadow: 0 2rem 3rem var(--color-light);
+}
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  appearance: none;
+  border: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 14px;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: Poppins, sans-serif;
+  font-size: 0.88rem;
+  background: var(--color-background);
+  overflow-x: hidden;
+  user-select: none;
+}
+
+.container {
+  display: grid;
+  width: 100%;
+  margin: 0 auto;
+  gap: var(--card-padding);
+  grid-template-columns: 14rem auto 23rem;
+}
+
+a {
+  color: var(--color-dark);
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+h1 {
+  font-weight: 800;
+  font-size: var(--card-padding);
+}
+h2 {
+  font-size: 1.4rem;
+}
+h3 {
+  font-size: 0.87rem;
+}
+h4 {
+  font-size: var(--border-radius-2);
+}
+h5 {
+  font-size: 0.77rem;
+}
+small {
+  font-size: 0.75rem;
+}
+.profile-photo {
+  width: 2.8rem;
+  height: 2.8rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.text-muted {
+  color: var(--color-info-dark);
+}
+
+p {
+  color: var(--color-dark-variant);
+}
+b {
+  color: var(--color-dark);
+}
+.primary {
+  color: var(--color-primary);
+}
+.danger {
+  color: var(--color-danger);
+}
+.warning {
+  color: var(--color-warning);
+}
+.success {
+  color: var(--color-success);
+}
+
+aside {
+  background: grey;
+  height: 100vh;
+}
+
+aside.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1.4rem;
+}
+
+aside .logo {
+  margin-top: 1.2rem;
+  font-size: 2rem;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+aside .close {
+  display: none;
+}
+
+/* =======Side bar =========== */
+
+aside .sidebar {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  height: 86vh;
+  position: relative;
+  top: 3rem;
+}
+aside h3 {
+  font-weight: 500;
+}
+
+aside .sidebar a {
+  display: flex;
+  color: var(--color-info-dark);
+  margin-left: 2rem;
+  gap: 1rem;
+  align-items: center;
+  position: relative;
+  height: 3.7rem;
+  transition: all 300ms ease;
+}
+
+aside .sidebar a span {
+  font-size: 1.6rem;
+  transition: all 300ms ease;
+}
+
+aside .sidebar a:last-child {
+  position: relative;
+  bottom: 2rem;
+  top: 2.5rem;
+  width: 100%;
+}
+
+aside .sidebar a .active {
+  background: var(--color-light);
+  color: var(--color-primary);
+  margin-left: 0;
+}
+aside .sidebar a .active::before {
+  content: "";
+  width: 6px;
+  height: 100%;
+  background: var(--color-primary);
+}
+
+aside .sidebar a .active span {
+  color: var(--color-primary);
+  margin-left: calc(1rem - 3px);
+}
+aside .sidebar a:hover {
+  color: var(--color-primary);
+}
+aside .sidebar a:hover span {
+  margin-left: calc(1rem - 3px);
+  color: var(1rem - 3px);
+}
+aside .sidebar .message-count {
+  background: var(--color-danger);
+  color: var(--color-white);
+  padding: 2px 10px;
+  font-size: 11px;
+  border-radius: var(--border-radius-1);
+}
+
+/* progress Bar */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.progress-container {
+  height: 15rem;
+  display: flex;
+  align-items: center;
+  margin-right: 33%;
+  justify-content: center;
+}
+.skrill {
+  width: 100%;
+  height: 160px;
+  position: relative;
+}
+.outer {
+  height: 160px;
+  width: 160px;
+  border-radius: 50%;
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+    -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+  padding: 20px;
+}
+.inner {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+    inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
+    -0.5px -0.5px 0px rgba(255, 255, 255, 1),
+    0.5px 0.5px 0px rgba(0, 0, 0, 0.15), 0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+}
+#number {
+  font-weight: 600;
+  color: #555;
+}
+circle {
+  fill: none;
+  stroke: url(#GradientColor);
+  stroke-dasharray: 472;
+  stroke-dashoffset: 472;
+  animation: anim 2s linear forwards;
+  stroke-width: 20px;
+}
+svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+@keyframes anim {
+  100% {
+    stroke-dashoffset: 357;
+  }
+}
+
+/* Course registration */
+td.table-head {
+  text-align: center;
+  text-transform: uppercase;
+  text-overflow: inherit;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.2rem;
+  font-style: normal;
+}
+td.table-body {
+  text-align: center;
+  justify-content: center;
+  justify-items: center;
+  text-transform: capitalize;
+  font-weight: 200;
+  font-style: normal;
+}
+li input {
+  display: block;
+  width: 100%;
+  font-weight: 400;
+}
+
+textarea {
+  width: 100%;
+  height: 160px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background: #f8f8f8;
+  resize: both;
+}
+main.questions {
+  margin-top: 5rem;
+  margin-right: 33%;
+  display: block;
+  align-items: center;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+}

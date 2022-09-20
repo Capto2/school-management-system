@@ -1,0 +1,33 @@
+</div>
+</body>
+
+<script>
+    const date = new Date();
+    const hours = date.getUTCHours;
+    console.log("Hour: " + hours);
+    if(hours < 12){
+        document.getElementById("myTime").innerHTML = "Good Morning";
+    } else if(hours >= 12 & hours <= 16){
+        document.getElementById("myTime").innerHTML = "Good Afternoon";
+    } else {
+        document.getElementById("myTime").innerHTML = "Good Evening";
+    }
+</script>
+<!-- Progress bar script -->
+<script>
+    let number = document.getElementById("number");
+    let counter = 0;
+    setInterval(function(){
+      if(counter === 65 ) {
+        clearInterval();
+      }else{
+        counter += 1;
+        number.innerHTML = counter + "%";
+      }
+    }, 30);
+</script>
+<script>
+  const registerbtn = document.getElementById("register-btn");
+</script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</html>

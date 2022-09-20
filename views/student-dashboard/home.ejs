@@ -1,0 +1,34 @@
+<%- include("partials/header"); -%>
+<main>
+            <h1>Dashboard</h1>
+            <hr />
+            <div class="w3-panel w3-pale-blue w3-leftbar w3-border-blue">
+                <h2 style="text-align: center;">Hello User, <span id="myTime"></span>, you have successfully logged in</h2>
+            </div>
+            <!-- Progressions -->
+            <div class="progress-container">
+                <div class="skrill">
+                    <div class="outer">
+                      <div class="inner">
+                        <div id="number">
+                          <span class="level"></span>
+                        </div>
+                      </div>
+                    </div>
+                
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                  <defs>
+                    <linearGradient id="GradientColor">
+                      <stop offset="0%" stop-color="#e91e63" />
+                      <stop offset="100%" stop-color="#673ad7" />
+                    </linearGradient>
+                  </defs>
+                  <circle cx="80" cy="80" r="70" stroke-linecap="round" />
+                </svg>
+                  </div>
+            </div>
+            <div class="study-stage">
+                <h2 class="level">100 Level</h2>
+            </div>
+</main>
+<%- include("partials/footer"); -%>

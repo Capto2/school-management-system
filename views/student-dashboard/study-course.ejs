@@ -1,0 +1,114 @@
+<%- include("partials/header"); -%>
+<main>
+    <h2>Register Courses</h2>
+    <table>
+        <tr>
+            <td>Session: </td>
+            <td>2016/2017</td>
+        </tr>
+        <tr>
+            <td>Validation Date: </td>
+            <td>13/ 11/ 2017 14: 14: 08</td>
+        </tr>
+        <tr>
+            <td>Validated by: </td>
+            <td>System</td>
+        </tr>
+        <tr>
+            <td>Total Credits: </td>
+            <td>46</td>
+        </tr>
+        <tr>
+            <td>GPA: </td>
+            <td>3.00</td>
+        </tr>
+        <tr>Remarks for Transcript: </tr>
+    </table>
+    <h1>Course Card Tickets</h1>
+    
+        <div class="w3-responsive">
+            <table class="w3-table-all w3-centered w3-small w3-striped w3-border">
+                <th>
+                    <tr class="table-card">
+                        <td class="table-head">Rm</td>
+                        <td class="table-head">Semster</td>
+                        <td class="table-head">Code</td>
+                        <td class="table-head">Title</td>
+                        <td class="table-head">Department</td>
+                        <td class="table-head">Faculty</td>
+                        <td class="table-head">Credit</td>
+                        <td class="table-head">Grade</td>
+                        <td class="table-head">CO</td>
+                        <td class="table-head">Remove Course</td>
+                    </tr>
+                    <form action="/index/study-course" method="post">
+                        <tr class="table-card">
+                            <input type="radio" name="delete-btn" value="delete" id="delete-btn" />
+                            <td class="table-body">1st Sem.</td>
+                            <td class="table-body">CHM111</td>
+                            <td class="table-body">General Chemistry 1</td>
+                            <td class="table-body">CHM</td>
+                            <td class="table-body">PSC</td>
+                            <td class="table-body">3</td>
+                            <td class="table-body">No</td>
+                        </tr>
+                    </form>
+                </th>
+            </table>
+            <div class="form">
+                <div class="line-through">
+                    <hr /><span class="material-symbols-sharp">expand_more</span>
+                </div>
+                <form action="/index/study-course" method="post" class="w3-container">
+                    <div class="form-box">
+                        <ul class="form-list">
+                            <li>
+                                <label for="semester" class="w3-text-blue">Enter Semester: </label>
+                                <select name="semester" class="w3-input w3-border w3-light-grey" id="semester">
+                                    <option value="null">Select Semester</option>
+                                    <option value="First Semester">First Semster</option>
+                                    <option value="Second Semester">Second Semester</option>
+                                </select>
+                            </li>
+                            <li>
+                                <label for="code" class="w3-text-blue">Enter Course Code</label>
+                                <input type="text" class="w3-input w3-border w3-light-grey" name="course-code" id="course-code" required maxlength="6" placeholder="CHM111" />
+                            </li>
+                            <li>
+                                <label for="course-title" class="w3-text-blue">Course Title</label>
+                                <input type="text" class="w3-input w3-border w3-light-grey" name="course-title" id="course-title" required minlength="5" placeholder="Nuclear Physics" />
+                            </li>
+                            <li>
+                                <label for="course-department" class="w3-text-blue">Course Department</label>
+                                <input type="text" name="course-department" id="course-department" required maxlength="4" min="2" placeholder="CHM" />
+                            </li>
+                            <li>
+                                <label for="course-faculty" class="w3-text-blue">Course Faculty</label>
+                                <input type="text" class="w3-input w3-border w3-light-grey" name="course-faculty" id="course-faculty" required maxlength="4" minlength="2" placeholder="PSC" />
+                            </li>
+                            <li>
+                                <label for="course-credit" class="w3-text-blue">Course Credit</label>
+                                <input type="number" class="w3-input w3-border w3-light-grey" name="course-credit" id="course-code" required placeholder="2" maxlength="1" />
+                            </li>
+                            <li>
+                                <label for="semester" class="w3-text-blue">Carry Over: </label>
+                                <select name="semester" class="w3-input w3-border w3-light-grey" id="semester">
+                                    <option value="null">==</option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select>
+                            </li>
+                            <button type="submit" class="w3-btn w3-blue-grey course-btn">Add Course</button>
+                        </ul>
+                    </div>
+                    <b class="danger">Please note that you can not edit course after registration submittion</b>
+                    <br />
+                    <form action="/register-course" method="post">
+                        <button type="submit"  style="margin-top: 2rem;" id="register-btn" class="w3-btn w3-blue-grey">Register Now</button>
+                    </form>
+                </form>
+            </div>
+        </div>
+        
+</main>
+<%- include("partials/footer"); -%>

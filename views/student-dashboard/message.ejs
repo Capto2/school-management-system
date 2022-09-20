@@ -1,0 +1,16 @@
+<%- include("partials/header"); -%>
+<main>
+<div class="card">
+    <h1 class="card-header">
+        Holiday
+    </h1>
+    
+    <p class="card-body">This holiday is to be over at the given date. 12<sub>th</sub> August 2023</p>
+    <form action="/index/message" method="post">
+        <textarea name="message-note" id="message-note" cols="30" rows="10"></textarea>
+        <br />
+        <button type="submit">Send Feeds</button>
+    </form>
+</div>
+</main>
+<%- include("partials/footer"); -%>
