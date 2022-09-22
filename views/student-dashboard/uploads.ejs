@@ -37,5 +37,33 @@
     <p class="info">Class of Degree: <span>-</span></p>
     <p class="info">Instituition Attended: <span>z</span></p>
     <p class="info">Exam Result: <span> Mathematics: Credit (C6)</span></p>
+
+    <form action="/index/clearance" method="post" style="margin-top: 1.89rem;" class="form">
+        <p><b>Upload Files</b></p>
+        <ul class="upload-list">
+            <li class="list-upload">
+                <label for="profile-photo">Profile Photo: </label><input type="file" required name="profile_photo" id="profile-photo" />
+            </li>
+            <li class="list-upload">
+                <label for="jamb-result">Jamb original Result: </label><input type="file" required name="jamb_original_result" id="jamb_original_result" />
+            </li>
+            <li>
+                <label for="jamb-admission-letter">Jamb Addmission Letter: </label><input type="file" required name="jamb_addmission_letter" id="jamb-admission-letter" />
+            </li>
+            <li class="list-upload">
+                <label for="first-result">First Sitting Result: </label><input type="file" name="first_result" id="first_result" />
+            </li>
+            <li class="list-upload">
+                <label for="second-result">Second Sitting Result: </label><input type="file" name="second_result" id="second_result" />
+            </li>
+            <li class="list-upload">
+                <label for="lga-origin">Local Government Of Origin: </label><input type="file" name="lga_origin" required id="lga_origin" />
+            </li>
+            <li class="list-upload">
+                <label for="birth-certificate">Birth Certificate / Age Decleration: </label><input type="file" required name="birth_certificate" id="birth_certificate" />
+            </li>
+            <button type="submit" class="btn-done">Done<span class="material-symbols-sharp">check_circle</span></button>
+        </ul>
+    </form>
 </main>
 <%- include("partials/footer"); -%>

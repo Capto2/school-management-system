@@ -33,6 +33,11 @@ const studentSchema = new mongoose.Schema({
   username: String,
   studentId: String,
   password: String,
+  email: String,
+  gender: String,
+  jambReg: String,
+  jambScores: String,
+  ssceReg: String
 });
 
 studentSchema.plugin(passportLocalMongoose); //salt schema
@@ -55,20 +60,26 @@ app.route("/").get(function (request, response) {
 });
 
 app
-  .route("/application")
+  .route("/news/:news")
   .get(function (request, response) {
-    response.render("application");
+    console.log(request.params);
+    response.render("index");
+  })
+  .post(function (request, response) {});
+
+app
+  .route("/register")
+  .get(function (request, response) {
+    response.render("register");
   })
   .post(function (request, response) {
     const email = request.body.email;
     const password = request.body.password;
-    // studentModel.register(
-
-    // );
+    
   });
 
 app
-  .route("/application/take-a-test")
+  .route("/register/take-a-test")
   .get(function (request, response) {
     response.render("take-test");
   })
@@ -111,6 +122,13 @@ app
   .post(function (request, response) {});
 
 app
+  .route("/index/applicationdata")
+  .get(function (request, response) {
+    response.render("student-dashboard/applicationData");
+  })
+  .post(function (request, response) {});
+
+app
   .route("/index/study-course")
   .get(function (request, response) {
     response.render("student-dashboard/study-course");
@@ -139,8 +157,7 @@ app.get("/index/check-result", function (request, response) {
   response.render("student-dashboard/check-result");
 });
 
-app.get("/index/logout", function (request, response) {
-  request.logout();
+app.get("/logout", function (request, response) {
   response.redirect("/login");
 });
 

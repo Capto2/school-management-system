@@ -30,36 +30,31 @@
             <table class="w3-table-all w3-centered w3-small w3-striped w3-border">
                 <th>
                     <tr class="table-card">
-                        <td class="table-head">Rm</td>
                         <td class="table-head">Semster</td>
                         <td class="table-head">Code</td>
                         <td class="table-head">Title</td>
                         <td class="table-head">Department</td>
                         <td class="table-head">Faculty</td>
                         <td class="table-head">Credit</td>
-                        <td class="table-head">Grade</td>
-                        <td class="table-head">CO</td>
-                        <td class="table-head">Remove Course</td>
                     </tr>
                     <form action="/index/study-course" method="post">
                         <tr class="table-card">
-                            <input type="radio" name="delete-btn" value="delete" id="delete-btn" />
                             <td class="table-body">1st Sem.</td>
                             <td class="table-body">CHM111</td>
                             <td class="table-body">General Chemistry 1</td>
                             <td class="table-body">CHM</td>
                             <td class="table-body">PSC</td>
                             <td class="table-body">3</td>
-                            <td class="table-body">No</td>
                         </tr>
                     </form>
                 </th>
             </table>
             <div class="form">
                 <div class="line-through">
-                    <hr /><span class="material-symbols-sharp">expand_more</span>
+                    <hr />
+                    <button onclick="myFunction()" style="cursor: pointer;">Close<span class="material-symbols-sharp">expand_more</span></button>
                 </div>
-                <form action="/index/study-course" method="post" class="w3-container">
+                <form action="/index/study-course" method="post" id="field-test" class="w3-container">
                     <div class="form-box">
                         <ul class="form-list">
                             <li>

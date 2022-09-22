@@ -70,3 +70,39 @@ div.form textarea::placeholder{
     font-weight: 700;
     height: -20px;
 }
+ul.form-list{
+    text-decoration-style: none;
+    list-style-type: none;
+}
+label.form-label{
+    font-size: 1.2rem;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: capitalize;
+}
+main.questions{
+    align-items: center;
+    align-content: center;
+    display: block;
+    margin-top: 5rem;
+}
+ul{
+    list-style-type: none;
+}
+ol button, button.print-page-btn{
+    display: block;
+    float: right;
+    width: 33%;
+    background-color: #696767;
+    color: #f5eded;
+    height: calc(2rem - 5px);
+    border-radius: 10px;
+}
+ol button:hover, button.print-page-btn:hover{
+    background-color: #000000;
+    color: #f5deb3;
+}
+ol button:active, button.print-page-btn:active{
+    background-color: #3cc521;
+    color: aliceblue;
+}

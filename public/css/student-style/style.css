@@ -14,7 +14,7 @@
   --color-light: rgba(132, 139, 200, 0.18);
   --color-primary-variant: #111e88;
   --color-dark-variant: #677483;
-  --color-background: #f6f6f9;
+  --color-background: #f6f9f7;
 
   --card-border-radius: 2rem;
   --border-radius-1: 0.4rem;
@@ -180,7 +180,7 @@ aside .sidebar a span {
 aside .sidebar a:last-child {
   position: relative;
   bottom: 2rem;
-  top: 2.5rem;
+  top: 2.7rem;
   width: 100%;
 }
 
@@ -284,7 +284,7 @@ td.table-head {
   text-transform: uppercase;
   text-overflow: inherit;
   text-decoration: none;
-  font-weight: 500;
+  font-weight: bold;
   font-size: 1.2rem;
   font-style: normal;
 }
@@ -320,4 +320,26 @@ main.questions {
   align-items: center;
   justify-items: center;
   justify-content: center;
+}
+button.btn-done{
+  display: inline-block;
+  width: 33%;
+  height: 3.23rem;
+  background-color: gray;
+  margin-top: 1rem;
+  margin-bottom: 2.4rem;
+  border-radius: 5px;
+  float: right;
+}
+button.btn-done:hover{
+  background-color: #111e88;
+  color: #fff;
+}
+button.btn-done:active{
+  background-color: #11aa56;
+  color: #f8f8f8;
+}
+div.show-result-table{
+  display: none;
+  background-color: #11aa56;
 }

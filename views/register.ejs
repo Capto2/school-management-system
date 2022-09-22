@@ -1,0 +1,30 @@
+<%- include("partials/header"); -%>
+<main style="margin-top: 5rem;">
+    <h1>Register now</h1>
+    <div class="form">
+        <form action="/register" method="post"></form>
+        <ul class="form-list">
+            <li>
+                <label for="email" class="form-label">email: </label><input type="email" required class="form-control" name="email" id="email" />
+            </li>
+            <li>
+                <label for="username" class="form-label">Full Name (First Name, Last Name and Other Name): </label><input type="text" required class="form-control" name="username" id="fullname" />
+            </li>
+            <li>
+                <label for="gender" class="form-label">Gender</label><input type="radio" name="gender" value="male" checked id="male" />
+                <input type="radio" name="gender" value="female" id="female" />
+            </li>
+            <li>
+                <label for="jamb-reg-number" class="form-label">Jamb Registration Number: </label><input type="text" required class="form-control" name="jambReg" id="jamb-reg-number">
+            </li>
+            <li>
+                <label for="jamb-scores" class="form-label">Jamb Scores: </label><input type="number" required name="jambScores" class="form-control" id="jamb-scores" />
+            </li>
+            <li>
+                <label for="ssce-reg-number" class="form-label">SSCE Reg Number: </label><input type="text" required class="form-control" name="ssceReg" id="ssce-reg-number" />
+            </li>
+            <button type="submit" class="btn btn-lg bg-success" style="margin-top: 1.5298rem;">Register Now</button>
+        </ul>
+    </div>
+</main>
+<%- include("partials/footer"); -%>
