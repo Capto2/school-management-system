@@ -106,3 +106,14 @@ ol button:active, button.print-page-btn:active{
     background-color: #3cc521;
     color: aliceblue;
 }
+div#content{
+    display: none;
+}
+div.result-container{
+    display: block;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+}

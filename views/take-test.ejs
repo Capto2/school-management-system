@@ -1,173 +1,273 @@
 <%- include("partials/header"); -%>
-<main class="questions">
-    <fieldset id="field-test">
-        <legend>Take a Test</legend>
-        <form action="/register/take-a-test" method="post" class="form">
-        <ol>
-            <div class="question-card">
-                <p class="question">
-                    What is the name of the first man to reach the sun
-                </p>
-                <ul class="answer-list">
-                    <li>
-                        <input type="radio" name="answer" id="answer_one" value="0" class="" />
-                        <label for="answer">Richard Vicktown</label>
-                    </li>
-                    <li>
-                        <input type="radio" name="answer" id="answer_two" value="0" class="" />
-                        <label for="answer">Nicholas Igbunu</label>
-                    </li>
-                    <li>
-                        <input type="radio" name="answer" id="answer_three value="1" class="" />
-                        <label for="answer">Jemifor Augustine</label>
-                    </li>
-                    <li>
-                        <input type="radio" name="answer" id="answer_four" value="0" class="" />
-                        <label for="answer">None</label>
-                    </li>
-                </ul>
-                
-                </div>
-            <div class="question-card">
-                    <p class="question">
-                        What is the name of the first man to reach the sun
-                    </p>
-                    <ul class="answer-list">
-                        <li>
-                            <input type="radio" name="answer" id="answer_one" value="0" class="" />
-                            <label for="answer">Richard Vicktown</label>
-                        </li>
-                        <li>
-                            <input type="radio" name="answer" id="answer_two" value="0" class="" />
-                            <label for="answer">Nicholas Igbunu</label>
-                        </li>
-                        <li>
-                            <input type="radio" name="answer" id="answer_three value="1" class="" />
-                            <label for="answer">Jemifor Augustine</label>
-                        </li>
-                        <li>
-                            <input type="radio" name="answer" id="answer_four" value="0" class="" />
-                            <label for="answer">None</label>
-                        </li>
-                    </ul>
-                    
-                </div>
-            <div class="question-card">
+    <main class="questions">
+        <fieldset>
+            <legend>Take a Test</legend>
+            <form action="/register/take-a-test" id="field-test" method="post" class="form">
+                <ol>
+                    <div class="question-card">
+                        <p class="question">
+                            What is the name of the first man to reach the earth
+                        </p>
+                        <ul class="answer-list">
+                            <li>
+                                <input type="radio" name="answerOne" id="answer_one" value="0" class="" />
+                                <label for="answer">Richard Nicholas</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="answerOne" id="answer_two" value="0" class="" />
+                                <label for="answer">Vicktown Igbunu</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="answerOne" id="answer_three" value="0" class="" />
+                                <label for="answer">Jemifor Augustine</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="answerOne" id="answer_four" value="1" class="" />
+                                <label for="answer">None</label>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="question-card">
+                        <p class="question">
+                            What is the name of the first man to reach the school
+                        </p>
+                        <ul class="answer-list">
+                            <li>
+                                <input type="radio" name="answerTwo" id="answer_one" value="1" class="" />
+                                <label for="answer">Richard Augustine</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="answerTwo" id="answer_two" value="0" class="" />
+                                <label for="answer">Nicholas Igbunu</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="answerTwo" id="answer_three" value="0" class="" />
+                                <label for="answer">Jemifor Vicktown</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="answerTwo" id="answer_four" value="0" class="" />
+                                <label for="answer">None</label>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="question-card">
+                        <p class="question">
+                            What is the name of the first man to leave the environment
+                        </p>
+                        <ul class="answer-list">
+                            <li>
+                                <input type="radio" name="answerThree" id="answer_one" value="0" class="" />
+                                <label for="answer">Richard Vicktown</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="answerThree" id="answer_two" value="0" class="" />
+                                <label for="answer">Nicholas Igbunu</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="answerThree" id="answer_three" value="0" class="" />
+                                <label for="answer">Jemifor Augustine</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="answerThree" id="answer_four" value="1" class="" />
+                                <label for="answer">None</label>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="question-card">
+                        <p class="question">
+                            What is the name of the first woman to leave the moon
+                        </p>
+                        <ul class="answer-list">
+                            <li>
+                                <input type="radio" name="answerFour" id="answer_one" value="0" class="" />
+                                <label for="answer">Richard Vicktown</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="answerFour" id="answer_two" value="0" class="" />
+                                <label for="answer">Nicholas Igbunu</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="answerFour" id="answer_three" value="1" class="" />
+                                <label for="answer">Jemifor Augustine</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="answerFour" id="answer_four" value="0" class="" />
+                                <label for="answer">None</label>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="question-card">
                         <p class="question">
                             What is the name of the first man to reach the sun
                         </p>
                         <ul class="answer-list">
                             <li>
-                                <input type="radio" name="answer" id="answer_one" value="0" class="" />
+                                <input type="radio" name="answerFive" id="answer_one" value="0" class="" />
                                 <label for="answer">Richard Vicktown</label>
                             </li>
                             <li>
-                                <input type="radio" name="answer" id="answer_two" value="0" class="" />
+                                <input type="radio" name="answerFive" id="answer_two" value="1" class="" />
                                 <label for="answer">Nicholas Igbunu</label>
                             </li>
                             <li>
-                                <input type="radio" name="answer" id="answer_three value="1" class="" />
+                                <input type="radio" name="answerFive" id="answer_three" value="0" class="" />
                                 <label for="answer">Jemifor Augustine</label>
                             </li>
                             <li>
-                                <input type="radio" name="answer" id="answer_four" value="0" class="" />
+                                <input type="radio" name="answerFive" id="answer_four" value="0" class="" />
                                 <label for="answer">None</label>
                             </li>
                         </ul>
-                        
-                </div>
-            <div class="question-card">
-                    <p class="question">
-                        What is the name of the first man to reach the sun
-                    </p>
-                    <ul class="answer-list">
-                        <li>
-                            <input type="radio" name="answer" id="answer_one" value="0" class="" />
-                            <label for="answer">Richard Vicktown</label>
-                        </li>
-                        <li>
-                            <input type="radio" name="answer" id="answer_two" value="0" class="" />
-                            <label for="answer">Nicholas Igbunu</label>
-                        </li>
-                        <li>
-                            <input type="radio" name="answer" id="answer_three value="1" class="" />
-                            <label for="answer">Jemifor Augustine</label>
-                        </li>
-                        <li>
-                            <input type="radio" name="answer" id="answer_four" value="0" class="" />
-                            <label for="answer">None</label>
-                        </li>
-                    </ul>
-                    
-                </div>
-            <div class="question-card">
-                    <p class="question">
-                        What is the name of the first man to reach the sun
-                    </p>
-                    <ul class="answer-list">
-                        <li>
-                            <input type="radio" name="answer" id="answer_one" value="0" class="" />
-                            <label for="answer">Richard Vicktown</label>
-                        </li>
-                        <li>
-                            <input type="radio" name="answer" id="answer_two" value="0" class="" />
-                            <label for="answer">Nicholas Igbunu</label>
-                        </li>
-                        <li>
-                            <input type="radio" name="answer" id="answer_three value="1" class="" />
-                            <label for="answer">Jemifor Augustine</label>
-                        </li>
-                        <li>
-                            <input type="radio" name="answer" id="answer_four" value="0" class="" />
-                            <label for="answer">None</label>
-                        </li>
-                    </ul>
-                    
-                </div>
-            <div class="question-card">
-                    <p class="question">
-                        What is the name of the first man to reach the sun
-                    </p>
-                    <ul class="answer-list">
-                        <li>
-                            <input type="radio" name="answer" id="answer_one" value="0" class="" />
-                            <label for="answer">Richard Vicktown</label>
-                        </li>
-                        <li>
-                            <input type="radio" name="answer" id="answer_two" value="0" class="" />
-                            <label for="answer">Nicholas Igbunu</label>
-                        </li>
-                        <li>
-                            <input type="radio" name="answer" id="answer_three value="1" class="" />
-                            <label for="answer">Jemifor Augustine</label>
-                        </li>
-                        <li>
-                            <input type="radio" name="answer" id="answer_four" value="0" class="" />
-                            <label for="answer">None</label>
-                        </li>
-                    </ul>
-                    
-                </div>
-                <button type="submit" onclick="myFunction()">Done</button>
-            </div>
-        </ol>
-        </form>
-    </fieldset>
-    <div class="container" id="content" style="display: none;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16rem" height="16rem" fill="green" class="bi bi-check-circle" viewBox="0 0 16 16">
-            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-            <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/>
-          </svg>
-          <svg xmlns="http://www.w3.org/2000/svg" width="16rem" height="16rem" fill="red" class="bi bi-x-circle" viewBox="0 0 16 16">
-            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-            <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
-          </svg>
-          <h1><b>70</b>%</h1>
-          <p>Student Id: <b>B1085063</b></p>
-          <p>Passcode: <b>616904</b></p>
-          <a href="/login"><button class="print-page-btn" id="print-page-btn">Print Page</button></a>
-    </div>
-    <br />
-    <br />
-</main>
-<%- include("partials/footer"); -%>
+
+                    </div>
+                    <div class="question-card">
+                        <p class="question">
+                            What is the name of the first woman to reach the moon
+                        </p>
+                        <ul class="answer-list">
+                            <li>
+                                <input type="radio" name="answerSix" id="answer_one" value="0" class="" />
+                                <label for="answer">Richard Vicktown</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="answerSix" id="answer_two" value="1" class="" />
+                                <label for="answer">Nicholas Igbunu</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="answerSix" id="answer_three" value="0" class="" />
+                                <label for="answer">Jemifor Augustine</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="answerSix" id="answer_four" value="0" class="" />
+                                <label for="answer">None</label>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="question-card">
+                        <p class="question">
+                            What is the name of the first woman to reach the school
+                        </p>
+                        <ul class="answer-list">
+                            <li>
+                                <input type="radio" name="answerSeven" id="answer_one" value="0" class="" />
+                                <label for="answer">Richard Vicktown</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="answerSeven" id="answer_two" value="1" class="" />
+                                <label for="answer">Nicholas Igbunu</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="answerSeven" id="answer_three" value="0" class="" />
+                                <label for="answer">Jemifor Augustine</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="answerSeven" id="answer_four" value="0" class="" />
+                                <label for="answer">None</label>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="question-card">
+                        <p class="question">
+                            What is the name of the first man to reach the sun
+                        </p>
+                        <ul class="answer-list">
+                            <li>
+                                <input type="radio" name="answerEight" id="answer_one" value="0" class="" />
+                                <label for="answer">Richard Vicktown</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="answerEight" id="answer_two" value="0" class="" />
+                                <label for="answer">Nicholas Igbunu</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="answerEight" id="answer_three" value="1" class="" />
+                                <label for="answer">Jemifor Augustine</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="answerEight" id="answer_four" value="0" class="" />
+                                <label for="answer">None</label>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="question-card">
+                        <p class="question">
+                            What is the name of the first man to reach the sun
+                        </p>
+                        <ul class="answer-list">
+                            <li>
+                                <input type="radio" name="answerNine" id="answer_one" value="0" class="" />
+                                <label for="answer">Richard Vicktown</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="answerNine" id="answer_two" value="0" class="" />
+                                <label for="answer">Nicholas Igbunu</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="answerNine" id="answer_three" value="1" class="" />
+                                <label for="answer">Jemifor Augustine</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="answerNine" id="answer_four" value="0" class="" />
+                                <label for="answer">None</label>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="question-card">
+                        <p class="question">
+                            What is the name of the first man to reach the sun
+                        </p>
+                        <ul class="answer-list">
+                            <li>
+                                <input type="radio" name="answerTen" id="answer_one" value="0" class="" />
+                                <label for="answer">Richard Vicktown</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="answerTen" id="answer_two" value="0" class="" />
+                                <label for="answer">Nicholas Igbunu</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="answerTen" id="answer_three" value="1" class="" />
+                                <label for="answer">Jemifor Augustine</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="answerTen" id="answer_four" value="0" class="" />
+                                <label for="answer">None</label>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <button type="submit" onclick="showData()" id="btn">Done</button>
+                    </div>
+                </ol>
+            </form>
+        </fieldset>
+        <div class="result-container" id="content">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16rem" height="16rem" fill="green" class="bi bi-check-circle"
+                viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                <path
+                    d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16rem" height="16rem" fill="red" class="bi bi-x-circle"
+                viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                <path
+                    d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+            </svg>
+            <h1><b>70</b>%</h1>
+            <p>Student Id: <b>B<%=studentId%></b></p>
+            <p>Passcode: <b><%=passcode%></b></p>
+            <a href="/login"><button class="print-page-btn" id="print-page-btn">Print Page</button></a>
+        </div>
+        <br />
+        <br />
+    </main>
+    <%- include("partials/footer"); -%>

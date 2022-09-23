@@ -1,8 +1,29 @@
-function myFunction() {
+function showData() {
   document.getElementById("field-test").style.display = "none";
+  document.getElementById("content").style.display = "block";
 }
-function showData(){
-    document.getElementById("$400Level-Result").style.display = "none";
+function clearForm() {
+  document.getElementsByName("email").value = "";
+  document.getElementsByName("username").value = "";
+  document.getElementsByName("gender").value = "";
+  document.getElementsByName("jambReg").value = "";
+  document.getElementsByName("jambScores").value = "";
+  document.getElementsByName("ssceReg1").value = "";
+  document.getElementsByName("ssceReg2").value = "";
+}
+function calTestScores() {
+  //results calculations
+  
+}
+const reg_jam = document.getElementById("jamb-scores");
+reg_jam.addEventListener("mouseout", applicationBtn);
+function applicationBtn(){
+  let jambScores = document.getElementById("jamb-scores").value;
+  if(jambScores < 200){
+    document.getElementById("reg-btn").style.display="none";
+  }else{
+    document.getElementById("reg-btn").style.display="block";
+  }
 }
 //print functions codes.
 var doc = new jsPDF();
